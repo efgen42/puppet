@@ -25,6 +25,11 @@ file { '/tmp/hello3.txt':
   ensure => 'present',
 }
 
+# Test4 working pupet
+file { '/tmp/hello4.txt':
+  ensure => 'present',
+}
+
 
 
 
