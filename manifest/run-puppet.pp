@@ -7,5 +7,12 @@ file { '/usr/local/bin/run-puppet':
 cron { 'run-puppet':
   command => '/usr/local/bin/run-puppet',
   hour    => '*',
-  minute  => '*/15',
+  minute  => '*/1',
 }
+
+# Tes working pupet
+file { '/tmp/hello.txt':
+  ensure => 'present',
+}
+
+
